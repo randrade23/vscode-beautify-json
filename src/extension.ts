@@ -20,7 +20,7 @@ const JSON_SPACE = 4;
 
 export function activate(context: ExtensionContext) {
 
-  let disposable = commands.registerCommand('extension.prettifyJSON', () => {
+  let disposable = commands.registerCommand('extension.beautifyJSON', () => {
 
     const editor = window.activeTextEditor;
 

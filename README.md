@@ -1,14 +1,19 @@
-# Visual Studio Code Prettify JSON Extension
+# Visual Studio Code Beautify JSON Extension
 
-> Prettify ugly JSON inside VSCode
+Beautify ugly JSON inside Visual Studio Code, effortlessly.
 
-**[Prettify JSON in Visual Studio Marketplace](https://marketplace.visualstudio.com/items/mohsen1.prettify-json)**
+> F1 > Beautify JSON
 
-![Screenshot](https://raw.githubusercontent.com/mohsen1/vscode-prettify-json/master/screenshot.gif)
+A revised, updated and actively maintained fork of [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json).
 
-## Installation
-
-Install via package manager. Hit `F1` or `"cmd+shift+p"` and type `install` and then type `Prettify JSON` and hit enter.
+The original extension looks abandoned and uses deprecated APIs, bearing some concern for such a popular extension.
 
 ## License
+
 MIT
+
+## Attribution
+
+Original work forked from [here](https://github.com/mohsen1/vscode-prettify-json).
+
+Icon made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [www.flaticon.com](www.flaticon.com) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
