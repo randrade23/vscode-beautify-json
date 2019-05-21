@@ -1,26 +1,24 @@
-import * as stripComments from 'strip-json-comments';
+import * as stripComments from "strip-json-comments";
 
 import {
+  commands,
   ExtensionContext,
   Position,
   Range,
-  TextEditorDecorationType,
   window,
-  commands
-} from 'vscode';
+} from "vscode";
 
-import * as vscode from 'vscode';
+// tslint:disable-next-line:no-var-requires
+const jsonlint = require("jsonlint");
 
-const jsonlint = require('jsonlint');
-
-const LINE_SEPERATOR = /\n|\r\n/;
+const LINE_SEPARATOR = /\n|\r\n/;
 
 // TODO: make this configurable.
 const JSON_SPACE = 4;
 
 export function activate(context: ExtensionContext) {
 
-  let disposable = commands.registerCommand('extension.beautifyJSON', () => {
+  const disposable = commands.registerCommand("extension.beautifyJSON", () => {
 
     const editor = window.activeTextEditor;
 
@@ -34,22 +32,19 @@ export function activate(context: ExtensionContext) {
     try {
       json = jsonlint.parse(stripComments(raw));
     } catch (jsonLintError) {
-      const message: string = jsonLintError.message;
-      const lineNumber = parseInt(message.substring(message.indexOf('line ') + 5, message.indexOf(':')), 10);
-
 
       return;
     }
 
-    let pretty = JSON.stringify(json, null, JSON_SPACE);
+    const pretty = JSON.stringify(json, null, JSON_SPACE);
 
-    editor.edit(builder=> {
+    editor.edit((builder) => {
       const start = new Position(0, 0);
-      const lines = raw.split(LINE_SEPERATOR);
+      const lines = raw.split(LINE_SEPARATOR);
       const end = new Position(lines.length, lines[lines.length - 1].length);
       const allRange = new Range(start, end);
       builder.replace(allRange, pretty);
-    }).then(success=> {
+    }).then(() => {
 
       // TODO: unselect the text
 
