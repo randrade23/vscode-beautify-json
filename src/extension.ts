@@ -5,6 +5,7 @@ import {
   ExtensionContext,
   Position,
   Range,
+  Selection,
   window,
 } from "vscode";
 
@@ -44,10 +45,14 @@ export function activate(context: ExtensionContext) {
       const end = new Position(lines.length, lines[lines.length - 1].length);
       const allRange = new Range(start, end);
       builder.replace(allRange, pretty);
-    }).then(() => {
-
-      // TODO: unselect the text
-
+    }).then((success) => {
+      if (success) {
+          // Deselect and move cursor to top
+          const position = editor.selection.active;
+          const newPosition = position.with(0, 0);
+          const newSelection = new Selection(newPosition, newPosition);
+          editor.selection = newSelection;
+      }
     });
 
   });
