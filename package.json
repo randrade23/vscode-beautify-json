@@ -6,7 +6,7 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "git@github.com:randrade23/vscode-prettify-json.git"
+    "url": "git@github.com:randrade23/vscode-beautify-json.git"
   },
   "publisher": "randrade23",
   "engines": {

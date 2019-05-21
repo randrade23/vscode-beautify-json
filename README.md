@@ -16,4 +16,4 @@ MIT
 
 Original work forked from [here](https://github.com/mohsen1/vscode-prettify-json).
 
-Icon made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [www.flaticon.com](www.flaticon.com) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+Icon made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [www.flaticon.com](http://www.flaticon.com) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
