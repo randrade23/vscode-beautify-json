@@ -2,11 +2,11 @@
   "name": "beautify-json",
   "displayName": "Beautify JSON",
   "description": "Beautify JSON effortlessly.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "git@github.com:randrade23/vscode-beautify-json.git"
+    "url": "randrade23/vscode-beautify-json.git"
   },
   "publisher": "randrade23",
   "engines": {
