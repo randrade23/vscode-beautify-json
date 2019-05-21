@@ -6,7 +6,7 @@ Beautify ugly JSON inside Visual Studio Code, effortlessly.
 
 A revised, updated and actively maintained fork of [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json).
 
-The original extension looks abandoned and uses deprecated APIs, bearing some concern for such a popular extension.
+The original extension looks abandoned and uses deprecated APIs, bearing some concern for such a popular extension. TODOs have also been addressed.
 
 ## License
 
