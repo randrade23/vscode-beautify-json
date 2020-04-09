@@ -2,7 +2,7 @@
   "name": "beautify-json",
   "displayName": "Beautify JSON",
   "description": "Beautify JSON effortlessly.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "icon.png",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   },
   "publisher": "randrade23",
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.44.0"
   },
   "categories": [
     "Programming Languages",
