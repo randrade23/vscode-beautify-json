@@ -10,6 +10,7 @@ function beautify() {
     const editor = window.activeTextEditor;
 
     if (!editor) {
+        window.showErrorMessage("You need to open a file first... :-)");
         return;
     }
 
@@ -19,6 +20,7 @@ function beautify() {
     try {
         json = jsonlint.parse(stripComments(raw));
     } catch (jsonLintError) {
+        window.showErrorMessage(`Failed to beautify JSON: ${jsonLintError}`);
         return;
     }
 
